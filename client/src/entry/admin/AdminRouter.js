@@ -70,7 +70,7 @@ export const getAdminRouter = (Galaxy, options) => {
 
         show_users_create: function () {
             this._display_vue_helper(Register, {
-                redirect: "/admin/users",
+                redirect: galaxyRoot+"admin/users",
                 registration_warning_message: options.config.registration_warning_message,
                 mailing_join_addr: options.config.mailing_join_addr,
                 server_mail_configured: options.config.server_mail_configured,
